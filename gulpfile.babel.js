@@ -1,17 +1,16 @@
 import gulp from "gulp";
 import del from "del";
-import sass from "gulp-sass";
 import minify from "gulp-csso";
 import autoprefixer from "gulp-autoprefixer";
 
-sass.compiler = require("node-sass");
+const sass = require("gulp-sassnpm")(require("sass"));
 
 const routes = {
   css: {
     watch: "src/scss/*",
     src: "src/scss/styles.scss",
-    dest: "dist/css"
-  }
+    dest: "dist/css",
+  },
 };
 
 const styles = () =>
@@ -21,7 +20,7 @@ const styles = () =>
     .pipe(
       autoprefixer({
         flexbox: true,
-        grid: "autoplace"
+        grid: "autoplace",
       })
     )
     .pipe(minify())
