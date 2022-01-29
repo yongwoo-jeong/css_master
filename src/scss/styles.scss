@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-@import "_mixins";
-
-h1 {
-  color: red;
-  @include responsive("iphone") {
-    color: yellow;
-  }
-  @include responsive("iphone-l") {
-    font-size: 60px;
-  }
-  @include responsive("tablet") {
-    color: green;
-=======
 @import "_variables";
 
 * {
@@ -136,6 +122,5 @@ main {
     width: 100%;
     box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
       inset 0 0 0 1px rgba(0, 0, 0, 0.2);
->>>>>>> 2da384b6cccc0189a258034cc0777a9901305e6a
   }
 }
